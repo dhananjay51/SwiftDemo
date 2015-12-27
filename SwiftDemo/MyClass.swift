@@ -7,12 +7,18 @@
 //
 
 import UIKit
-
+@objc protocol SampleProtocol
+{
+    func someMethod()
+    
+}
 class MyClass: NSObject {
+    var delegate:SampleProtocol?
     var  name:String!
     func name(age:Int)
     {
       print( age)
+        delegate?.someMethod()
 }
 
 }

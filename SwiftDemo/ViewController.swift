@@ -8,12 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SampleProtocol  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("Hl swift")
+         let ojj = MyClass()
+         ojj.delegate=self
+         ojj  .name(12)
+        
+     
+            
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,7 +27,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    func  someMethod() {
+         print("Delegate")
+    }
+    
+   
+    
+    
 }
 
