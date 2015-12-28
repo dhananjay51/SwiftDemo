@@ -18,7 +18,7 @@ class ViewController: UIViewController, SampleProtocol  {
          ojj.delegate=self
          ojj  .name(12)
         
-     
+      print("testing")
             
         // Do any additional setup after loading the view, typically from a nib.
     }
