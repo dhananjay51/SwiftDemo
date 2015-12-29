@@ -31,6 +31,7 @@ class ViewController: UIViewController, SampleProtocol  {
     }
     func  someMethod() {
          print("Delegate")
+         // Hello Commit
     }
     
   @IBAction  func  Login (sender:AnyObject)
